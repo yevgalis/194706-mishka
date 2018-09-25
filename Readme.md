@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Yevgeniy Alishevets](https://up.htmlacademy.ru/adaptive/15/user/194706).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Кравченко] (https://htmlacademy.ru/profile/id13921).
 
 ---
 
