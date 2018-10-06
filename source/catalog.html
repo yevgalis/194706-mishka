@@ -8,11 +8,13 @@
     <header class="page-header">
       <div class="page-header__top">
         <nav class="main-nav">
-          <a class="page-header__logo" href="index.html">
-            <img src="http://placehold.it/86x36" alt="Интернет магазин Мишка" width="86" height="36">
-          </a>
-          <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
           <ul class="main-nav__list site-navigation">
+            <li class="site-navigation__item">
+              <a class="page-header__logo" href="index.html">
+                <img src="http://placehold.it/86x36" alt="Интернет магазин Мишка" width="86" height="36">
+              </a>
+              <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
+            </li>
             <li class="site-navigation__item site-navigation__item--active"><a class="site-navigation__link">Каталог товаров</a></li>
             <li class="site-navigation__item"><a class="site-navigation__link" href="form.html">Вязание на заказ</a></li>
             <li class="site-navigation__item site-navigation__item--search"><a class="site-navigation__link">Поиск по сайту</a></li>
@@ -32,14 +34,16 @@
           </a>
           <div class="catalog-item__description">
             <header class="catalog-item__header">
-              <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+              <a class="catalog-item__link" href="#">
+                <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+              </a>
               <p class="catalog-item__specs">Рост 30 см, вес 200 г</p>
             </header>
           </div>
           <footer class="catalog-item__footer">
             <span class="catalog-item__price">1 200 руб.</span>
             <a class="catalog-item__cart" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
+              <span class="visually-hidden" aria-label="Добавить в корзину"></span>
             </a>
           </footer>
         </article>
@@ -49,14 +53,16 @@
           </a>
           <div class="catalog-item__description">
             <header class="catalog-item__header">
-              <h2 class="catalog-item__title">Корзинка для белья</h2>
+              <a class="catalog-item__link" href="#">
+                <h2 class="catalog-item__title">Корзинка для белья</h2>
+              </a>
               <p class="catalog-item__specs">Диаметр 15 см, высота 10 см</p>
             </header>
           </div>
           <footer class="catalog-item__footer">
             <span class="catalog-item__price">690 руб.</span>
             <a class="catalog-item__cart" href="#">
-              <span class="visually-hidden">Добавить в корзину</span>
+              <span class="visually-hidden" aria-label="Добавить в корзину"></span>
             </a>
           </footer>
         </article>
@@ -66,14 +72,16 @@
             </a>
             <div class="catalog-item__description">
               <header class="catalog-item__header">
-                <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+                <a class="catalog-item__link" href="#">
+                  <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+                </a>
                 <p class="catalog-item__specs">Диаметр 30 см, высота 30 см</p>
               </header>
             </div>
             <footer class="catalog-item__footer">
               <span class="catalog-item__price">1 500 руб.</span>
               <a class="catalog-item__cart" href="#">
-                <span class="visually-hidden">Добавить в корзину</span>
+                <span class="visually-hidden" aria-label="Добавить в корзину"></span>
               </a>
             </footer>
           </article>
@@ -92,9 +100,9 @@
     </main>
     <footer class="page-footer">
       <ul class="page-footer__social social">
-        <li class="social__instagram"><a class="social__link social__link--instagram" href="#" arial-label="Мы в Instagram"></a></li>
-        <li class="social__facebook"><a class="social__link social__link--facebook" href="#" arial-label="Мы в Facebook"></a></li>
-        <li class="social__twitter"><a class="social__link social__link--twitter" href="#" arial-label="Мы в Twitter"></a></li>
+        <li class="social__instagram social__link--instagram"><a class="social__link" href="#" arial-label="Мы в Instagram"></a></li>
+        <li class="social__facebook social__link--facebook"><a class="social__link" href="#" arial-label="Мы в Facebook"></a></li>
+        <li class="social__twitter social__link--twitter"><a class="social__link" href="#" arial-label="Мы в Twitter"></a></li>
       </ul>
       <p class="page-footer__copyright copyright">Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
