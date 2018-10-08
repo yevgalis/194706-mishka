@@ -1,6 +1,7 @@
 .feedback__title {
   margin: 0;
   margin-top: 57px;
+
   @include font-set(25px, 30px, bold);
 }
 
@@ -12,12 +13,9 @@
 .feedback__text {
   margin: 0;
   margin-bottom: 20px;
-  @include font-set(15px, 30px);
   color: $description-color;
-}
 
-.feedback__author {
-
+  @include font-set(15px, 30px);
 }
 
 .feedback__author-name {

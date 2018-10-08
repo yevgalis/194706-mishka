@@ -10,14 +10,16 @@
 
 .catalog-item__title {
   margin: 0;
-  @include font-set(17px, 24px, bold);
   color: $black;
+
+  @include font-set(17px, 24px, bold);
 }
 
 .catalog-item__specs {
   margin: 0;
-  @include font-set(13px, 30px);
   color: $description-color;
+
+  @include font-set(13px, 30px);
 }
 
 .catalog-item__price {
