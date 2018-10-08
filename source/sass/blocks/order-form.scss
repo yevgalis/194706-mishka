@@ -1,0 +1,25 @@
+.order-form__item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.order-form__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.order-form__title {
+  @include font-set(17px, 16px, bold);
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.order-form__textarea {
+  padding: 0;
+  font-family: inherit;
+}
+
+.order-form__required {
+  @include font-set(14px, 16px);
+  color: $description-color;
+}

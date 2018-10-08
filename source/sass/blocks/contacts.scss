@@ -1,0 +1,17 @@
+.contacts__title {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  @include font-set(18px, 30px, bold);
+}
+
+.contacts__type,
+.contacts__link,
+.contacts__text {
+  @include font-set(15px, 30px);
+  color: $description-color;
+}
+
+.contacts__text {
+  margin: 0;
+}

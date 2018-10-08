@@ -1,0 +1,53 @@
+.hit-product__header {
+  margin-top: 30px;
+}
+
+.hit-product__title {
+  margin: 0;
+  @include font-set(25px, 30px, bold);
+}
+
+.hit-product__label {
+  font-weight: bold;
+  line-height: 20px;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.hit-product__info {
+  margin-top: 27px;
+}
+
+.hit-product__description {
+  margin: 0;
+}
+
+.hit-product__description,
+.hit-product__key,
+.hit-product__value {
+  font-size: 15px;
+  color: $description-color;
+}
+
+.hit-product__specs {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.hit-product__key,
+.hit-product__value {
+  padding: 0;
+}
+
+.hit-product__image {
+  margin-top: 28px;
+}
+
+.hit-product__footer {
+  margin-top: 27px;
+  margin-bottom: 35px;
+}
+
+.hit-product__price {
+  font-weight: bold;
+}

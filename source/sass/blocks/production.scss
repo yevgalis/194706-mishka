@@ -1,0 +1,14 @@
+.production {
+  border: 1px solid #ededed;
+}
+
+.production__title {
+  margin: 0;
+  @include font-set(17px, 24px, bold);
+}
+
+.production__description {
+  margin: 0;
+  font-size: 13px;
+  color: $description-color;
+}

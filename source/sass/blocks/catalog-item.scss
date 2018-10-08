@@ -1,0 +1,26 @@
+.catalog-item {
+  border: 1px solid #ededed;
+}
+
+.catalog-item__description {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  //border-bottom: 1px solid #ececec;
+}
+
+.catalog-item__title {
+  margin: 0;
+  @include font-set(17px, 24px, bold);
+  color: $black;
+}
+
+.catalog-item__specs {
+  margin: 0;
+  @include font-set(13px, 30px);
+  color: $description-color;
+}
+
+.catalog-item__price {
+  font-size: 15px;
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+/// Default
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+
+/// Page blocks
+@import 'blocks/page-header.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/site-navigation.scss';
+@import 'blocks/category.scss';
+@import 'blocks/hit-product.scss';
+@import 'blocks/about-us.scss';
+@import 'blocks/feedback.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/map.scss';
+@import 'blocks/catalog-list.scss';
+@import 'blocks/catalog-item.scss';
+@import 'blocks/production.scss';
+@import 'blocks/order.scss';
+@import 'blocks/order-form.scss';
+@import 'blocks/radio-group.scss';
+@import 'blocks/checkbox-group.scss';
+@import 'blocks/text-group.scss';
+@import 'blocks/field-group.scss';
+@import 'blocks/page-footer.scss';
+
+/// General blocks
+@import 'blocks/button.scss';
+@import 'blocks/social.scss';
+@import 'blocks/copyright.scss';
+@import 'blocks/modal.scss';
+@import 'blocks/choose-size.scss';
+@import 'blocks/visually-hidden.scss';

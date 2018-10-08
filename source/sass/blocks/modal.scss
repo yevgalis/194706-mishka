@@ -1,0 +1,11 @@
+.modal__title {
+  margin: 30px 0 15px;
+  @include font-set(25px, 30px, bold);
+  text-transform: uppercase;
+}
+
+.modal__text {
+  margin: 0;
+  @include font-set(15px, 30px);
+  color: $description-color;
+}
