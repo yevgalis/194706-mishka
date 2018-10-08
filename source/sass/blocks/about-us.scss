@@ -1,0 +1,15 @@
+.about-us__title {
+  margin: 0;
+
+  @include font-set(25px, 30px, bold);
+}
+
+.about-us__list {
+  @include list-style-drop;
+}
+
+.about-us__item {
+  padding-top: 60px;
+  font-weight: bold;
+  line-height: 20px;
+}

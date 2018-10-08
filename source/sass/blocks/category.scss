@@ -1,0 +1,21 @@
+.category__list {
+  @include list-style-drop;
+}
+
+.category__item {
+  padding: 28px 0;
+
+  &--interior {
+    background-color: $primary-color;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
+
+.category__link {
+  font-size: 19px;
+  font-weight: bold;
+  color: $white;
+}
