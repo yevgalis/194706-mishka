@@ -1,5 +1,15 @@
+.hit-product {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.hit-product__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .hit-product__header {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .hit-product__title {
@@ -46,9 +56,57 @@
 
 .hit-product__footer {
   margin-top: 27px;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
 }
 
 .hit-product__price {
   font-weight: bold;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .hit-product {
+    width: auto;
+  }
+
+  .hit-product__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .hit-product__header {
+    width: 100%;
+  }
+
+  .hit-product__info {
+    width: 50%;
+    margin-right: 10px; //  Для переноса футера на новыю строку
+  }
+
+  .hit-product__image {
+    position: absolute;
+    top: 83px;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+  }
+
+  .hit-product__footer {
+    width: 50%;
+  }
+}
+
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .hit-product {
+    width: auto;
+  }
+
+  .hit-product__wrapper {
+    width: 1050px;
+  }
 }

@@ -3,3 +3,11 @@
 
   @include font-set(19px, 18px, bold);
 }
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 200px;
+  }
+}

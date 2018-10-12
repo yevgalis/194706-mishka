@@ -1,4 +1,15 @@
 .social {
   @include list-style-drop;
   display: flex;
+  // для позиционирования
+  min-height: 50px;
+  background-color: blue;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .social {
+    width: 170px;
+  }
 }

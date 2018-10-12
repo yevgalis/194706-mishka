@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин Мишка: Каталог товаров</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,16 +11,19 @@
       <div class="page-header__top">
         <nav class="main-nav">
           <ul class="main-nav__list site-navigation">
-            <li class="site-navigation__item">
+            <li class="site-navigation__item site-navigation__item--logo">
               <a class="site-navigation__link" href="index.html">
                 <img src="http://placehold.it/86x36" alt="Интернет магазин Мишка" width="86" height="36">
               </a>
               <button class="main-nav__toggle" type="button" aria-label="Показать меню"></button>
             </li>
-            <li class="site-navigation__item site-navigation__item--active"><a class="site-navigation__link">Каталог товаров</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="form.html">Вязание на заказ</a></li>
-            <li class="site-navigation__item site-navigation__item--search"><a class="site-navigation__link">Поиск по сайту</a></li>
+            <li class="site-navigation__item site-navigation__item--catalog site-navigation__item--active"><a class="site-navigation__link">Каталог товаров</a></li>
+            <li class="site-navigation__item site-navigation__item--knitting"><a class="site-navigation__link" href="form.html">Вязание на заказ</a></li>
+            <li class="site-navigation__item site-navigation__item--search"><a class="site-navigation__link"><span class="site-navigation__item--search-text">Поиск по сайту</span></a></li>
             <li class="site-navigation__item site-navigation__item--cart"><a class="site-navigation__link">Корзина: пока пуста</a></li>
+            <li class="site-navigation__item site-navigation__item--new"><a class="site-navigation__link" href="form.html">Новые поступления</a></li>
+            <li class="site-navigation__item site-navigation__item--sale"><a class="site-navigation__link" href="form.html">Распродажа</a></li>
+            <li class="site-navigation__item site-navigation__item--delivery"><a class="site-navigation__link" href="form.html">Бесплатная доставка по России</a></li>
           </ul>
         </nav>
         <div class="page-header__intro">
@@ -30,7 +34,7 @@
     <main class="page-main">
       <section class="catalog-list">
         <article class="catalog-list__item catalog-item">
-          <a class="catalog-item__link" href="#">
+          <a class="catalog-item__link-image" href="#">
             <img class="catalog-item__image" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
           <div class="catalog-item__description">
@@ -47,7 +51,7 @@
           </footer>
         </article>
         <article class="catalog-list__item catalog-item">
-          <a class="catalog-item__link" href="#">
+          <a class="catalog-item__link-image" href="#">
             <img class="catalog-item__image" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
           </a>
           <div class="catalog-item__description">
@@ -64,7 +68,7 @@
           </footer>
         </article>
         <article class="catalog-list__item catalog-item">
-            <a class="catalog-item__link" href="#">
+            <a class="catalog-item__link-image" href="#">
               <img class="catalog-item__image" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
             </a>
             <div class="catalog-item__description">
@@ -94,16 +98,21 @@
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social">
-        <li class="social__instagram social__link--instagram"><a class="social__link" href="#" arial-label="Мы в Instagram"></a></li>
-        <li class="social__facebook social__link--facebook"><a class="social__link" href="#" arial-label="Мы в Facebook"></a></li>
-        <li class="social__twitter social__link--twitter"><a class="social__link" href="#" arial-label="Мы в Twitter"></a></li>
-      </ul>
-      <p class="page-footer__copyright copyright">Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img src="http://placehold.it/102x34" alt="Интернет магазин Мишка" width="102" height="34">
         </a>
-      </p>
+        <ul class="page-footer__social social">
+          <li class="social__instagram social__link--instagram"><a class="social__link" href="#" arial-label="Мы в Instagram"></a></li>
+          <li class="social__facebook social__link--facebook"><a class="social__link" href="#" arial-label="Мы в Facebook"></a></li>
+          <li class="social__twitter social__link--twitter"><a class="social__link" href="#" arial-label="Мы в Twitter"></a></li>
+        </ul>
+        <p class="page-footer__copyright copyright">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+          </a>
+        </p>
+      </div>
     </footer>
     <div class="modal modal--add-cart">
         <h2 class="modal__title">Добавить в корзину</h2>

@@ -1,7 +1,15 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .contacts__title {
-  margin: 0;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 30px 0 20px;
 
   @include font-set(18px, 30px, bold);
 }
@@ -16,4 +24,32 @@
 
 .contacts__text {
   margin: 0;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+  }
+
+  .contacts__wrapper {
+    width: 668px;
+  }
+}
+
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1050px;
+    height: 480px;
+  }
+
+  .contacts__map {
+    order: 1;
+  }
 }

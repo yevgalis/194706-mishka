@@ -1,9 +1,14 @@
+.category {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .category__list {
   @include list-style-drop;
 }
 
 .category__item {
-  padding: 28px 0;
+  padding: 28px 30px;
 
   &--interior {
     background-color: $primary-color;
@@ -18,4 +23,30 @@
   font-size: 19px;
   font-weight: bold;
   color: $white;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .category {
+    width: 668px;
+  }
+
+  .category__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -81px;
+  }
+
+  .category__item {
+    width: 50%;
+  }
+}
+
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .category {
+    width: 1050px;
+  }
 }

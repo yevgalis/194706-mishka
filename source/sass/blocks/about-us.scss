@@ -1,3 +1,13 @@
+.about-us {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.about-us__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .about-us__title {
   margin: 0;
 
@@ -12,4 +22,41 @@
   padding-top: 60px;
   font-weight: bold;
   line-height: 20px;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .about-us {
+    width: 668px;
+  }
+
+  .about-us__wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 350px;
+  }
+
+  .about-us__item {
+    width: 50%;
+  }
+}
+
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 1050px;
+  }
+
+  .about-us__wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
 }

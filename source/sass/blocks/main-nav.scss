@@ -1,3 +1,10 @@
-.main-nav {
-  margin: 0; // for travis
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .main-nav {
+    padding: 0 50px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

@@ -3,6 +3,17 @@
 }
 
 .checkbox-group__label {
+  display: block;
   font-weight: bold;
   line-height: 18px;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

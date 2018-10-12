@@ -3,10 +3,25 @@
 }
 
 .text-group__label {
+  display: block;
   font-weight: bold;
   line-height: 18px;
 }
 
 .text-group__input {
+  display: block;
   font-family: inherit;
+}
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .text-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+  }
+
+  .text-group__input {
+    width: 420px;
+  }
 }

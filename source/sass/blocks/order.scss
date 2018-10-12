@@ -1,6 +1,39 @@
+.order {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .order__description {
-  margin: 0;
-  margin-top: 30px;
+  width: 260px;
+  margin: 30px auto 0;
   font-size: 13px;
   color: $description-color;
+}
+
+.order__form {
+  margin: 50px auto 0;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .order {
+    width: 768px;
+  }
+
+  .order__description {
+    width: 668px;
+  }
+}
+
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .order {
+    width: 1150px;
+  }
+
+  .order__description {
+    width: 700px;
+  }
 }

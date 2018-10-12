@@ -1,4 +1,6 @@
 .production {
+  width: 260px;
+  margin: 0 auto;
   border: 1px solid #ededed;
 }
 
@@ -12,4 +14,50 @@
   margin: 0;
   font-size: 13px;
   color: $description-color;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .production {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .production__video-player {
+    height: 455px;
+    background-color: grey; //  Для наглядности верстки
+  }
+
+  .production__title {
+    order: 1;
+    padding: 0 41px;
+  }
+
+  .production__info {
+    order: 2;
+    padding: 0 41px;
+  }
+}
+
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .production {
+    width: 1050px;
+    height: 450px;
+  }
+
+  .production__video-player {
+    width: 680px;
+    height: 100%;
+  }
+
+  .production__title,
+  .production__info {
+    width: 250px;
+  }
 }

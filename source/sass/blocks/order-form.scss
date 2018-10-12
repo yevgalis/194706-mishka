@@ -1,3 +1,7 @@
+.order-form {
+  width: 260px;
+}
+
 .order-form__item {
   margin: 0;
   padding: 0;
@@ -22,4 +26,34 @@
 .order-form__required {
   @include font-set(14px, 16px);
   color: $description-color;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .order-form {
+    width: auto;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+  }
+
+  .order-form__item:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+
+  .order-form__title {
+    margin-right: 100px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .order-form__required {
+    order: 1;
+  }
 }

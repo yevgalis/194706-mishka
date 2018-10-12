@@ -1,3 +1,32 @@
 .catalog-list {
-  padding: 30px 0;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.catalog-list__item {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.catalog-list__item:last-child {
+  margin-bottom: 30px;
+}
+
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    width: 768px;
+  }
+}
+
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
+    padding: 0 50px;
+  }
 }
