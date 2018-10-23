@@ -109,7 +109,7 @@
 /// DECORATION LINE FOR MOBILE FORM TITLE
 @media (max-width: $mobile-width-only) {
   .order-form__title {
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       right: 0;
@@ -201,7 +201,7 @@
     padding-left: 62px;
   }
 
-  .order-form__group  {
+  .order-form__group {
     width: 700px;
   }
 

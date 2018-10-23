@@ -34,11 +34,6 @@
   color: $description-color;
 }
 
-.hit-product__key,
-.hit-product__value {
-  line-height: 20px;
-}
-
 .hit-product__specs {
   margin-top: 16px;
   border-collapse: collapse;
@@ -50,7 +45,8 @@
 
 .hit-product__key,
 .hit-product__value {
-  padding: 10px 0 ;
+  padding: 10px 0;
+  line-height: 20px;
 }
 
 .hit-product__key {
