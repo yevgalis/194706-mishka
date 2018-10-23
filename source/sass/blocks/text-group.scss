@@ -1,16 +1,36 @@
 .text-group {
   margin: 0;
+  padding-top: 29px;
+  padding-bottom: 2px;
 }
 
 .text-group__label {
   display: block;
+  margin-bottom: 14px;
   font-weight: bold;
   line-height: 18px;
 }
 
 .text-group__input {
   display: block;
+  width: 100%;
+  padding-bottom: 14px;
   font-family: inherit;
+  line-height: 18px;
+  color: $description-color;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $black;
+  outline: none;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  &::placeholder {
+    color: $description-color;
+    opacity: 0.3;
+  }
 }
 
 /// TABLET WIDTH
@@ -18,10 +38,43 @@
   .text-group {
     display: flex;
     flex-wrap: wrap;
-    width: 550px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 501px;
+    padding-top: 0;
+    padding-bottom: 49px;
+  }
+
+  .text-group__label {
+    padding-right: 25px;
+    font-size: 19px;
   }
 
   .text-group__input {
-    width: 420px;
+    flex-grow: 1;
+    width: 375px;
+    margin-top: -6px;
+    padding-left: 15px;
+    font-size: 19px;
+
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .text-group {
+    width: 700px;
+  }
+
+  .text-group__input {
+    width: 573px;
+
+    &:hover,
+    &:focus {
+      border-color: #62d1ba;
+    }
   }
 }
