@@ -1,10 +1,10 @@
 .category__list {
   @include list-style-drop;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .category__item {
-  padding: 28px 0;
-
   &--interior {
     background-color: $primary-color;
   }
@@ -15,7 +15,88 @@
 }
 
 .category__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
   font-size: 19px;
   font-weight: bold;
   color: $white;
+  outline: none;
+}
+
+.category__link span {
+  width: 110px;
+}
+
+.category__interior-icon {
+  width: 40px;
+  height: 62px;
+  fill: rgba(20, 144, 128, 0.5);
+  margin-right: 6px;
+}
+
+.category__toy-icon {
+  width: 60px;
+  height: 60px;
+  fill: rgba(20, 144, 128, 0.5);
+  margin-top: 1px;
+  margin-right: -3px;
+  margin-bottom: 1px;
+}
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .category__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin-top: -118px;
+    padding: 0 50px;
+  }
+
+  .category__item {
+    width: 50%;
+  }
+
+  .category__link {
+    padding: 28px 36px;
+
+    @include font-set(20px, 30px);
+  }
+
+  .category__link span {
+    width: 115px;
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .category__list {
+    width: 1150px;
+  }
+
+  .category__item--interior .category__link:hover,
+  .category__item--interior .category__link:focus {
+    background-color: $primary-color;
+  }
+
+  .category__item--toys .category__link:hover,
+  .category__item--toys .category__link:focus {
+    background-color: #56c3b2;
+  }
+
+  .category__link {
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+    }
+
+    &:active span,
+    &:active .category__interior-icon,
+    &:active .category__toy-icon {
+      opacity: 0.3;
+    }
+  }
 }

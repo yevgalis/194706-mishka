@@ -1,3 +1,28 @@
 .button {
   display: block;
+  min-width: 120px;
+  padding: 14px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid $description-color;
+  background-color: $white;
+  outline: none;
+  cursor: pointer;
+
+  @include font-set(17px, 20px, bold);
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .button {
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $description-color;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

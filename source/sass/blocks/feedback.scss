@@ -1,28 +1,125 @@
+.feedback__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 24px 30px 45px;
+}
+
 .feedback__title {
   margin: 0;
-  margin-top: 57px;
 
   @include font-set(25px, 30px, bold);
 }
 
+.feedback__slider {
+  margin-top: 24px;
+}
+
 .feedback__item {
   margin: 0;
-  margin-top: 28px;
 }
 
 .feedback__text {
   margin: 0;
-  margin-bottom: 20px;
   color: $description-color;
 
   @include font-set(15px, 30px);
 }
 
+.feedback__author {
+  display: block;
+  margin-top: 26px;
+  margin-bottom: 28px;
+}
+
 .feedback__author-name {
+  display: block;
   font-weight: bold;
+  font-style: normal;
 }
 
 .feedback__author-tag {
+  display: block;
+  margin-top: 3px;
+  font-style: normal;
   line-height: 30px;
   color: $description-color;
+}
+
+.feedback__button {
+  width: 100%;
+  margin-top: 38px;
+}
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .feedback__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 768px;
+    padding: 76px 50px 88px;
+    background: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: 0 top;
+  }
+
+  .feedback__title {
+    @include font-set(43px, 50px);
+  }
+
+  .feedback__slider {
+    order: 2;
+    margin-top: 47px;
+  }
+
+  .feedback__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feedback__text {
+    font-size: 17px;
+  }
+
+  .feedback__author {
+    margin-top: 57px;
+  }
+
+  .feedback__author-name {
+    font-size: 18px;
+  }
+
+  .feedback__button {
+    align-self: flex-end;
+    width: 175px;
+    margin-top: 0;
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .feedback__wrapper {
+    width: 1150px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 136px;
+    padding-left: 225px;
+    background-position: 50px top;
+  }
+
+  .feedback__title {
+    @include font-set(53px, 57px);
+  }
+
+  .feedback__text {
+    width: 770px;
+  }
+
+  .feedback__author {
+    margin-top: 39px;
+  }
 }

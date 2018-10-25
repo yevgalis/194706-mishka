@@ -1,7 +1,49 @@
-.choose-size__radio {
-  margin: 0;
+.choose-size {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 260px;
 }
 
 .choose-size__label-radio {
+  width: 82px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @include font-set(17px, 16px, bold);
+
+  color: $description-color;
+  text-align: center;
   text-transform: uppercase;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+}
+
+.choose-size__radio:checked + .choose-size__label-radio {
+  border-color: $primary-color;
+}
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .choose-size {
+    width: 350px;
+  }
+
+  .choose-size__label-radio {
+    width: 112px;
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .choose-size__label-radio {
+    &:hover,
+    &:focus {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
+
+    &:active {
+      border-color: #62d1ba;
+    }
+  }
 }

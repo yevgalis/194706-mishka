@@ -1,7 +1,106 @@
 .field-group {
+  position: relative;
   margin: 0;
+  padding-top: 20px;
 }
 
 .field-group__input {
+  width: 100%;
+  padding-bottom: 14px;
   font-family: inherit;
+  line-height: 18px;
+  color: $description-color;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $black;
+  outline: none;
+
+  &::placeholder {
+    color: $description-color;
+    opacity: 0.3;
+  }
+}
+
+.field-group__input[type="tel"] {
+  margin-bottom: 32px;
+}
+
+.field-group__input[type="email"] {
+  margin-bottom: 2px;
+}
+
+.field-group__phone-icon {
+  position: absolute;
+  top: 18px;
+  right: 8px;
+  width: 25px;
+  height: 24px;
+  fill: $black;
+  opacity: 0.2;
+}
+
+.field-group__email-icon {
+  position: absolute;
+  top: 19px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  fill: $black;
+  opacity: 0.2;
+}
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .field-group {
+    padding-top: 0;
+  }
+
+  .field-group__input {
+    margin-top: -10px;
+    padding-left: 15px;
+    font-size: 19px;
+  }
+
+  .field-group__input[type="tel"] {
+    margin-bottom: 36px;
+  }
+
+  .field-group__input[type="email"] {
+    margin-bottom: 50px;
+  }
+
+  .field-group__phone-icon {
+    top: 0;
+    right: 22px;
+  }
+
+  .field-group__email-icon {
+    top: 0;
+    right: 22px;
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .field-group__input {
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: #62d1ba;
+    }
+  }
+
+  .field-group__input[type="tel"]:hover + .field-group__phone-icon,
+  .field-group__input[type="tel"]:focus + .field-group__phone-icon,
+  .field-group__input[type="tel"]:active + .field-group__phone-icon {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+
+  .field-group__input[type="email"]:hover + .field-group__email-icon,
+  .field-group__input[type="email"]:focus + .field-group__email-icon,
+  .field-group__input[type="email"]:active + .field-group__email-icon {
+    fill: #62d1ba;
+    opacity: 1;
+  }
 }

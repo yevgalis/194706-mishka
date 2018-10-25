@@ -1,5 +1,46 @@
 .copyright {
+  width: 260px;
   margin: 0;
+  padding: 0 39px;
 
   @include font-set(19px, 18px, bold);
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  color: $black;
+  outline: none;
+  cursor: pointer;
+}
+
+.copyright__logo-icon {
+  width: 27px;
+  height: 34px;
+  fill: $primary-color;
+}
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 185px;
+    padding: 0;
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    &:hover .copyright__logo-icon,
+    &:focus .copyright__logo-icon {
+      fill: #46c1ae;
+    }
+
+    &:active,
+    &:active .copyright__logo-icon {
+      opacity: 0.3;
+    }
+  }
 }

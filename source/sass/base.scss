@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  margin: 0;  // Будет обнулено в normalize
+  position: relative; // for modal
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
@@ -19,7 +19,7 @@ body {
   word-wrap: break-word;
   font-family: $font-family;
   font-size: $font-size;
-  line-height: $line-height; //либо переменная либо множителем; (например 1.4, 1.5 определяется в plain text - в наборном тексте берем лайн хейт и делим на размер шрифта)*/
+  line-height: $line-height;
   color: $black;
   background-color: $bg-color;
 }

@@ -1,5 +1,7 @@
-.hit-product__header {
-  margin-top: 30px;
+.hit-product__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 27px 30px 36px;
 }
 
 .hit-product__title {
@@ -9,6 +11,8 @@
 }
 
 .hit-product__label {
+  display: block;
+  margin-top: 5px;
   font-weight: bold;
   line-height: 20px;
   color: $primary-color;
@@ -16,7 +20,7 @@
 }
 
 .hit-product__info {
-  margin-top: 27px;
+  margin-top: 22px;
 }
 
 .hit-product__description {
@@ -31,13 +35,22 @@
 }
 
 .hit-product__specs {
-  margin-top: 30px;
+  margin-top: 16px;
   border-collapse: collapse;
+}
+
+.hit-product__row {
+  border-bottom: 1px solid #ececec;
 }
 
 .hit-product__key,
 .hit-product__value {
-  padding: 0;
+  padding: 10px 0;
+  line-height: 20px;
+}
+
+.hit-product__key {
+  width: 98px;
 }
 
 .hit-product__image {
@@ -45,10 +58,133 @@
 }
 
 .hit-product__footer {
-  margin-top: 27px;
-  margin-bottom: 35px;
+  margin-top: 17px;
 }
 
 .hit-product__price {
+  display: block;
   font-weight: bold;
+  text-align: center;
+}
+
+.hit-product__button {
+  width: 100%;
+  margin-top: 25px;
+}
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .hit-product__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 46px 50px 53px;
+  }
+
+  .hit-product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hit-product__title {
+    @include font-set(43px, 50px);
+  }
+
+  .hit-product__label {
+    width: 126px;
+    margin-top: 0;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .hit-product__info {
+    width: 50%;
+    margin-top: 47px;
+  }
+
+  .hit-product__description {
+    width: 285px;
+
+    @include font-set(17px, 30px);
+  }
+
+  .hit-product__specs {
+    margin-top: 34px;
+  }
+
+  .hit-product__image {
+    position: absolute;
+    right: 50px;
+    bottom: 53px;
+    z-index: -1;
+    width: 334px;
+    height: 404px;
+    background-color: #f1f1f1; // до подмены графики
+  }
+
+  .hit-product__footer {
+    width: 50%;
+    margin-top: 54px;
+  }
+
+  .hit-product__price {
+    margin-left: 72px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .hit-product__button {
+    width: 292px;
+    margin-top: 34px;
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .hit-product__wrapper {
+    width: 1150px;
+    padding-top: 121px;
+    padding-bottom: 72px;
+  }
+
+  .hit-product__header {
+    justify-content: flex-start;
+  }
+
+  .hit-product__title {
+    @include font-set(53px, 57px);
+  }
+
+  .hit-product__label {
+    order: -1;
+    width: 72px;
+    margin-left: 47px;
+    margin-right: 55px;
+  }
+
+  .hit-product__info {
+    margin-left: 175px;
+  }
+
+  .hit-product__specs {
+    margin-top: 46px;
+  }
+
+  .hit-product__image {
+    bottom: 72px;
+    width: 525px;
+    height: 636px;
+  }
+
+  .hit-product__footer {
+    margin-top: 106px;
+    margin-left: 175px;
+  }
+
+  .hit-product__price {
+    margin-left: 74px;
+  }
 }
