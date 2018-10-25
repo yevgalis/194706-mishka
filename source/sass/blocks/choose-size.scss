@@ -33,3 +33,17 @@
     width: 112px;
   }
 }
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .choose-size__label-radio {
+    &:hover,
+    &:focus {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
+
+    &:active {
+      border-color: #62d1ba;
+    }
+  }
+}

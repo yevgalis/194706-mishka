@@ -56,7 +56,7 @@
   }
 
   .field-group__input {
-    margin-top: -10px;  // не поднимается выше из-за flex
+    margin-top: -10px;
     padding-left: 15px;
     font-size: 19px;
   }
@@ -88,5 +88,19 @@
     &:active {
       border-color: #62d1ba;
     }
+  }
+
+  .field-group__input[type="tel"]:hover + .field-group__phone-icon,
+  .field-group__input[type="tel"]:focus + .field-group__phone-icon,
+  .field-group__input[type="tel"]:active + .field-group__phone-icon {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+
+  .field-group__input[type="email"]:hover + .field-group__email-icon,
+  .field-group__input[type="email"]:focus + .field-group__email-icon,
+  .field-group__input[type="email"]:active + .field-group__email-icon {
+    fill: #62d1ba;
+    opacity: 1;
   }
 }

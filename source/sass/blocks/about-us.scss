@@ -94,17 +94,20 @@
   }
 
   .about-us__title {
+    margin-bottom: 48px;
+
     @include font-set(43px, 50px);
   }
 
   .about-us__list {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-wrap: wrap;
   }
 
   .about-us__item {
     width: 50%;
+    margin-top: 0;
 
     @include font-set(20px, 22px);
 
@@ -114,10 +117,12 @@
 
     &--money {
       order: 3;
+      margin-top: 58px;
     }
 
     &--love {
       order: 5;
+      margin-top: 62px;
     }
 
     &--knitting {
@@ -148,6 +153,8 @@
   }
 
   .about-us__title {
+    //margin-bottom: 48px;
+
     @include font-set(53px, 57px);
   }
 }

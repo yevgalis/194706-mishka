@@ -41,12 +41,15 @@
   }
 }
 
-.radio-group__input {
-  display: none;
-}
-
 .radio-group__input:checked + .radio-group__label::after {
   display: block;
+}
+
+.radio-group__input:disabled + .radio-group__label,
+.radio-group__input:disabled + .radio-group__label::before,
+.radio-group__input:disabled + .radio-group__label::after {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /// TABLET WIDTH
@@ -77,6 +80,21 @@
       left: 15px;
       width: 22px;
       height: 22px;
+    }
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .radio-group__label {
+    &:hover::before,
+    &:focus::before {
+      border-color: #62d1ba;
+    }
+
+    &:active::before {
+      border-color: $description-color;
+      opacity: 0.3;
     }
   }
 }

@@ -41,12 +41,15 @@
   }
 }
 
-.checkbox-group__input {
-  display: none;
-}
-
 .checkbox-group__input:checked + .checkbox-group__label::after {
   display: block;
+}
+
+.checkbox-group__input:disabled + .checkbox-group__label,
+.checkbox-group__input:disabled + .checkbox-group__label::before,
+.checkbox-group__input:disabled + .checkbox-group__label::after {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /// TABLET WIDTH
@@ -100,6 +103,16 @@
 
     &:nth-of-type(odd) {
       flex-grow: 0;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      border-color: #62d1ba;
+    }
+
+    &:active::before {
+      border-color: $description-color;
+      opacity: 0.3;
     }
   }
 }
