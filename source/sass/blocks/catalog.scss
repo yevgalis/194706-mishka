@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     width: 1150px;
     margin-top: 127px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .catalog-list__item {
@@ -45,7 +45,7 @@
   }
 
   .catalog-list__item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -163,6 +163,11 @@
 @media (min-width: $desktop-width) {
   .catalog-item {
     width: 316px;
+    margin-bottom: 20px;
+
+    &:hover {
+      box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .catalog-item:not(:nth-child(3n)) {

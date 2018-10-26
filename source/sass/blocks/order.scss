@@ -30,7 +30,7 @@
   }
 
   .order__form {
-    padding-top: 8px;  // 72px
+    padding-top: 8px;
   }
 }
 
@@ -65,7 +65,8 @@
 }
 
 .order-form__title {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin: 0;
 
   @include font-set(17px, 16px, bold);
@@ -111,12 +112,10 @@
   .order-form__title {
     &::after {
       content: "";
-      position: absolute;
-      right: 0;
-      top: 50%;
-      display: block;
+      flex-grow: 1;
       width: 198px;
       height: 1px;
+      margin-left: 27px;
       background-color: #62d1ba;
     }
 
