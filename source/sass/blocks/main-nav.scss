@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.main-nav__list {
+  margin: 0 auto;
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 0;
@@ -76,14 +80,6 @@
 
 /// TABLET WIDTH
 @media (min-width: $tablet-width) {
-  .main-nav {
-    padding: 0 50px;
-  }
-
-  .main-nav__list {
-    margin: 0 auto;
-  }
-
   .main-nav__toggle {
     display: none;
   }

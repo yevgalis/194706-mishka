@@ -145,6 +145,10 @@
     width: 1050px;
     padding-top: 40px;
     padding-bottom: 59px;
+
+    &:hover {
+      box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .production__header {
@@ -186,6 +190,7 @@
       width: 81px;
       height: 61px;
       transform: translate(5px, 4px);
+      opacity: 0.3;
     }
   }
 

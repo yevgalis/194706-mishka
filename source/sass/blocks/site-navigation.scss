@@ -57,10 +57,13 @@
 /// TABLET WIDTH
 @media (min-width: $tablet-width) {
   .site-navigation {
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 668px;
+    width: 768px;
+    padding: 0 50px;
   }
 
   .site-navigation__item {
@@ -128,7 +131,7 @@
 /// DESKTOP WIDTH
 @media (min-width: $desktop-width) {
   .site-navigation {
-    width: 1050px;
+    width: 1150px;
   }
 
   .site-navigation__item {
