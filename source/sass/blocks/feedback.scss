@@ -62,6 +62,10 @@
     background-repeat: no-repeat;
     background-size: 350px 457px;
     background-position: 0 top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .feedback__title {
