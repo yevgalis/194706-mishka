@@ -54,6 +54,8 @@
 }
 
 .hit-product__image {
+  width: 260px;
+  height: 315px;
   margin-top: 28px;
 }
 
@@ -125,6 +127,11 @@
     background-color: #f1f1f1; // до подмены графики
   }
 
+  .hit-product__image img {
+    width: 334px;
+    height: 404px;
+  }
+
   .hit-product__footer {
     width: 50%;
     margin-top: 54px;
@@ -175,6 +182,11 @@
 
   .hit-product__image {
     bottom: 72px;
+    width: 525px;
+    height: 636px;
+  }
+
+  .hit-product__image img {
     width: 525px;
     height: 636px;
   }
