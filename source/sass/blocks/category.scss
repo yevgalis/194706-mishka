@@ -29,7 +29,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  &:after {
+  &::after {
     content: "";
     width: 50px;
     height: 70px;
@@ -45,7 +45,7 @@
   padding-top: 21px;
   padding-bottom: 22px;
 
-  &:after {
+  &::after {
     content: "";
     width: 60px;
     height: 60px;
@@ -86,7 +86,7 @@
     padding-top: 26px;
     padding-bottom: 28px;
 
-    &:after {
+    &::after {
       width: 50px;
       height: 70px;
       background-size: 40px 62px;
@@ -98,7 +98,7 @@
     padding-top: 31px;
     padding-bottom: 28px;
 
-    &:after {
+    &::after {
       width: 60px;
       height: 60px;
       background-size: 60px 60px;
