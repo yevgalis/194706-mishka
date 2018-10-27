@@ -82,6 +82,14 @@ gulp.task("copy", function () {
   done();
 }); */
 
+gulp.task('polyfill', function () {
+  return gulp.src([
+    'node_modules/svg4everybody/dist/svg4everybody.min.js',
+    'node_modules/picturefill/dist/picturefill.min.js'
+    ])
+    .pipe(gulp.dest('build/js'));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -101,6 +109,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "js",
+  "polyfill",
   "images",
   "webp",
   "sprite"

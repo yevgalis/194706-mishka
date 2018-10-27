@@ -43,5 +43,9 @@
   ],
   "engines": {
     "node": "8.12"
+  },
+  "dependencies": {
+    "picturefill": "^3.0.3",
+    "svg4everybody": "^2.1.9"
   }
 }
