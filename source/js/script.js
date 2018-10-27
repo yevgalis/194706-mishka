@@ -1,6 +1,6 @@
 // MOBILE SITE NAVIGATION
-const siteNav = document.querySelector('.main-nav');
-const toggleBtn = document.querySelector('.main-nav__toggle');
+var siteNav = document.querySelector('.main-nav');
+var toggleBtn = document.querySelector('.main-nav__toggle');
 
 siteNav.classList.remove('main-nav--nojs');
 
@@ -15,11 +15,11 @@ toggleBtn.addEventListener('click', function() {
 });
 
 // MODAL WINDOW SHOW/CLOSE
-const showModalBtn = document.querySelectorAll('.js-show-modal');
-const modal = document.querySelector('.modal');
+var showModalBtn = document.querySelectorAll('.js-show-modal');
+var modal = document.querySelector('.modal');
 
 function doShowModal() {
-//  const modal = document.querySelector('.modal');
+//  var modal = document.querySelector('.modal');
   if (modal.classList.contains('modal--add-cart')) {
     modal.classList.toggle('modal--add-cart');
   }
@@ -31,7 +31,7 @@ function doShowModal() {
 //  }
 //}
 
-for (let i = 0; i < showModalBtn.length; i++) {
+for (var i = 0; i < showModalBtn.length; i++) {
   showModalBtn[i].addEventListener("click", doShowModal);
 }
 
