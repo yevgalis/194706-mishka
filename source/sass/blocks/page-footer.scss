@@ -34,7 +34,7 @@
     cursor: pointer;
   }
 
-  .page-footer__logo-icon {
+  .icon--footer-logo {
     width: 102px;
     height: 34px;
     fill: #231f20;
@@ -56,12 +56,12 @@
   }
 
   .page-footer__logo[href] {
-    &:hover .page-footer__logo-icon,
-    &:focus .page-footer__logo-icon {
+    &:hover .icon--footer-logo,
+    &:focus .icon--footer-logo {
       fill: #46c1ae;
     }
 
-    &:active .page-footer__logo-icon {
+    &:active .icon--footer-logo {
       opacity: 0.3;
     }
   }

@@ -17,19 +17,19 @@
   margin-right: 40px;
 }
 
-.social__instagram-icon {
+.icon--instagram {
   width: 22px;
   height: 21px;
   fill: $social-color;
 }
 
-.social__facebook-icon {
+.icon--facebook {
   width: 15px;
   height: 28px;
   fill: $social-color;
 }
 
-.social__twitter-icon {
+.icon--twitter {
   width: 23px;
   height: 20px;
   fill: $social-color;
@@ -60,18 +60,18 @@
 /// DESKTOP WIDTH
 @media (min-width: $desktop-width) {
   .social__link {
-    &:hover .social__instagram-icon,
-    &:focus .social__instagram-icon,
-    &:hover .social__facebook-icon,
-    &:focus .social__facebook-icon,
-    &:hover .social__twitter-icon,
-    &:focus .social__twitter-icon {
+    &:hover .icon--instagram,
+    &:focus .icon--instagram,
+    &:hover .icon--facebook,
+    &:focus .icon--facebook,
+    &:hover .icon--twitter,
+    &:focus .icon--twitter {
       fill: #46c1ae;
     }
 
-    &:active .social__instagram-icon,
-    &:active .social__facebook-icon,
-    &:active .social__twitter-icon {
+    &:active .icon--instagram,
+    &:active .icon--facebook,
+    &:active .icon--twitter {
       opacity: 0.3;
     }
   }

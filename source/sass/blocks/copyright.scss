@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.copyright__logo-icon {
+.icon--htmlacademy {
   width: 27px;
   height: 34px;
   fill: $primary-color;
@@ -33,13 +33,13 @@
 /// DESKTOP WIDTH
 @media (min-width: $desktop-width) {
   .copyright__link {
-    &:hover .copyright__logo-icon,
-    &:focus .copyright__logo-icon {
+    &:hover .icon--htmlacademy,
+    &:focus .icon--htmlacademy {
       fill: #46c1ae;
     }
 
     &:active,
-    &:active .copyright__logo-icon {
+    &:active .icon--htmlacademy {
       opacity: 0.3;
     }
   }

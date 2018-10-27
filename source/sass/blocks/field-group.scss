@@ -29,7 +29,7 @@
   margin-bottom: 2px;
 }
 
-.field-group__phone-icon {
+.icon--phone {
   position: absolute;
   top: 18px;
   right: 8px;
@@ -39,7 +39,7 @@
   opacity: 0.2;
 }
 
-.field-group__email-icon {
+.icon--email {
   position: absolute;
   top: 19px;
   right: 8px;
@@ -69,12 +69,12 @@
     margin-bottom: 50px;
   }
 
-  .field-group__phone-icon {
+  .icon--phone {
     top: 0;
     right: 22px;
   }
 
-  .field-group__email-icon {
+  .icon--email {
     top: 0;
     right: 22px;
   }
@@ -90,16 +90,16 @@
     }
   }
 
-  .field-group__input[type="tel"]:hover + .field-group__phone-icon,
-  .field-group__input[type="tel"]:focus + .field-group__phone-icon,
-  .field-group__input[type="tel"]:active + .field-group__phone-icon {
+  .field-group__input[type="tel"]:hover + .icon--phone,
+  .field-group__input[type="tel"]:focus + .icon--phone,
+  .field-group__input[type="tel"]:active + .icon--phone {
     fill: #62d1ba;
     opacity: 1;
   }
 
-  .field-group__input[type="email"]:hover + .field-group__email-icon,
-  .field-group__input[type="email"]:focus + .field-group__email-icon,
-  .field-group__input[type="email"]:active + .field-group__email-icon {
+  .field-group__input[type="email"]:hover + .icon--email,
+  .field-group__input[type="email"]:focus + .icon--email,
+  .field-group__input[type="email"]:active + .icon--email {
     fill: #62d1ba;
     opacity: 1;
   }
