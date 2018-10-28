@@ -31,8 +31,11 @@
 @media (min-width: $tablet-width) {
   .slider__controls {
     width: 167px;
-    margin-top: 25px;
+    //margin-top: 25px;
     padding-right: 11px;
+    order: 2;
+    margin-top: -85px;
+    margin-left: auto;
   }
 
   .slider__button {
@@ -52,7 +55,10 @@
 @media (min-width: $desktop-width) {
   .slider__controls {
     width: 175px;
-    margin-top: 10px;
+    //margin-top: 10px;
+    order: 2;
+    margin-top: -85px;
+    margin-left: auto;
   }
 
   .slider__button {
