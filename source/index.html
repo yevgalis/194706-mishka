@@ -33,7 +33,7 @@
                 <svg class="icon icon--search" width="19" height="18">
                   <use xlink:href="img/sprite.svg#sprite-icon-search"></use>
                 </svg>
-                <span class="site-navigation__item--search-text">Поиск по сайту</span>
+                <span class="site-navegation__item site-navigation__item--search-text">Поиск по сайту</span>
               </a>
             </li>
             <li class="site-navigation__item site-navigation__item--cart">
@@ -108,7 +108,7 @@
           </div>
           <footer class="hit-product__footer">
             <span class="hit-product__price">Цена: 990 руб.</span>
-            <button class="hit-product__button button js-show-modal" type="button">Заказать</button>
+            <a class="hit-product__button button js-show-modal" href="add-cart.html">Заказать</a>
           </footer>
         </div>
       </article>
@@ -141,7 +141,7 @@
               </div>
             </blockquote>
           </div>
-          <a class="feedback__button button">Написать</a>
+          <a class="feedback__button button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -160,10 +160,12 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.5050212533795!2d30.322129556036177!3d59.9387324848628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2suk!4v1538766081897" allowfullscreen></iframe>
         </div>
         <div class="contacts__wrapper">
-          <a class="contacts__button button">Напишите нам</a>
+          <a class="contacts__button button" href="write-us.html">Напишите нам</a>
         </div>
       </section>
     </main>
+
+
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
@@ -172,22 +174,22 @@
           </svg>
         </a>
         <ul class="page-footer__social social">
-          <li class="social__instagram social__link--instagram">
-            <a class="social__link" href="#" aria-label="Мы в Instagram">
+          <li class="social__instagram">
+            <a class="social__link social__link--instagram" href="#" aria-label="Мы в Instagram">
               <svg class="icon icon--instagram" width="22" height="21">
                 <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
-          <li class="social__facebook social__link--facebook">
-            <a class="social__link" href="#" aria-label="Мы в Facebook">
+          <li class="social__facebook">
+            <a class="social__link social__link--facebook" href="#" aria-label="Мы в Facebook">
               <svg class="icon icon--facebook" width="15" height="28">
                 <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
-          <li class="social__twitter social__link--twitter">
-            <a class="social__link" href="#" aria-label="Мы в Twitter">
+          <li class="social__twitter">
+            <a class="social__link social__link--twitter" href="#" aria-label="Мы в Twitter">
               <svg class="icon icon--twitter" width="23" height="20">
                 <use xlink:href="img/sprite.svg#sprite-icon-twitter"></use>
               </svg>
@@ -204,7 +206,9 @@
         </p>
       </div>
     </footer>
-    <div class="overlay modal--add-cart"></div>
+
+
+    <div class="overlay overlay--show"></div>
     <div class="modal modal--add-cart">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
