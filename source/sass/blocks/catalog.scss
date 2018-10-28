@@ -164,6 +164,7 @@
 /// DESKTOP WIDTH
 @media (min-width: $desktop-width) {
   .catalog-item {
+    flex-direction: column;
     width: 316px;
     margin-bottom: 20px;
 
@@ -182,15 +183,16 @@
 
   .catalog-item__link-image {
     width: 316px;
-    height: 462px;
+    height: 463px;
   }
 
   .catalog-item__image {
-    width: 100%;
-    height: auto;
+    width: 314px;
+    height: 463px;
   }
 
   .catalog-item__description {
+    flex-grow: 1;
     width: 100%;
   }
 
