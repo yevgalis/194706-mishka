@@ -19,17 +19,18 @@ var showModalBtn = document.querySelectorAll('.js-show-modal');
 var overlay = document.querySelector('.overlay');
 var modal = document.querySelector('.modal');
 
-function toggleModal() {
+function toggleModal(event) {
+  event.preventDefault();
   if (modal.classList.contains('modal--add-cart')) {
     modal.classList.remove('modal--add-cart');
   } else {
     modal.classList.add('modal--add-cart');
   }
 
-  if (overlay.classList.contains('modal--add-cart')) {
-    overlay.classList.remove('modal--add-cart');
+  if (overlay.classList.contains('overlay--show')) {
+    overlay.classList.remove('overlay--show');
   } else {
-    overlay.classList.add('modal--add-cart');
+    overlay.classList.add('overlay--show');
   }
 }
 

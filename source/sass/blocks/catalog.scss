@@ -214,9 +214,12 @@
   .catalog-item__footer {
     margin-right: 0;
     margin-left: 0;
+    padding-top: 21px;
   }
 
   .catalog-item__cart {
+    padding-right: 5px;
+
     &:hover .icon--cart-catalog,
     &:focus .icon--cart-catalog {
       fill: $primary-color;
