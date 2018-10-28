@@ -71,7 +71,7 @@
 }
 
 .contacts__button {
-  margin-top: 39px;
+  margin-top: 41px;
 }
 
 /// TABLET WIDTH
@@ -125,7 +125,7 @@
     }
 
     &:not(:last-of-type) {
-      margin-right: 55px;
+      margin-right: 52px;
     }
   }
 
@@ -173,7 +173,7 @@
 
     &:first-of-type {
       display: block;
-      padding-top: 164px;
+      padding-top: 162px;
     }
 
     &:first-of-type::before {
@@ -189,8 +189,8 @@
     @include font-set(53px, 57px);
 
     &::after {
-      top: -10px;
-      left: -107px;
+      top: -8px;
+      left: -111px;
     }
   }
 

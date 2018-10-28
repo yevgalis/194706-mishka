@@ -6,7 +6,7 @@
 
 .field-group__input {
   width: 100%;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   font-family: inherit;
   line-height: 18px;
   color: $description-color;
@@ -58,6 +58,7 @@
   .field-group__input {
     margin-top: -10px;
     padding-left: 15px;
+    padding-bottom: 12px;
     font-size: 19px;
   }
 

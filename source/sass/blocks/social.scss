@@ -38,6 +38,18 @@
 .social__link {
   outline: none;
   cursor: pointer;
+
+  &--instagram {
+    padding-top: 7px;
+  }
+
+  &--facebook {
+    padding-top: 3px;
+  }
+
+  &--twitter {
+    padding-top: 6px;
+  }
 }
 
 /// TABLET WIDTH
@@ -46,6 +58,20 @@
     justify-content: space-between;
     width: 141px;
     border: none;
+  }
+
+  .social__link {
+    &--instagram {
+      padding-top: 8px;
+    }
+
+    &--facebook {
+      padding-top: 5px;
+    }
+
+    &--twitter {
+      padding-top: 8px;
+    }
   }
 
   .social__instagram {
@@ -60,6 +86,20 @@
 /// DESKTOP WIDTH
 @media (min-width: $desktop-width) {
   .social__link {
+    &--instagram {
+      padding-top: 11px;
+      padding-left: 3px;
+    }
+
+    &--facebook {
+      padding-top: 7px;
+      padding-left: 2px;
+    }
+
+    &--twitter {
+      padding-top: 11px;
+    }
+
     &:hover .icon--instagram,
     &:focus .icon--instagram,
     &:hover .icon--facebook,

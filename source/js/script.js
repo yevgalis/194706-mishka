@@ -16,23 +16,25 @@ toggleBtn.addEventListener('click', function() {
 
 // MODAL WINDOW SHOW/CLOSE
 var showModalBtn = document.querySelectorAll('.js-show-modal');
+var overlay = document.querySelector('.overlay');
 var modal = document.querySelector('.modal');
 
-function doShowModal() {
-//  var modal = document.querySelector('.modal');
+function toggleModal() {
   if (modal.classList.contains('modal--add-cart')) {
-    modal.classList.toggle('modal--add-cart');
+    modal.classList.remove('modal--add-cart');
+  } else {
+    modal.classList.add('modal--add-cart');
+  }
+
+  if (overlay.classList.contains('modal--add-cart')) {
+    overlay.classList.remove('modal--add-cart');
+  } else {
+    overlay.classList.add('modal--add-cart');
   }
 }
 
-//function closeModal(event) {
-//  if (event.keyCode === 27) {
-//    modal.classList.add('modal--add-cart');
-//  }
-//}
-
 for (var i = 0; i < showModalBtn.length; i++) {
-  showModalBtn[i].addEventListener("click", doShowModal);
+  showModalBtn[i].addEventListener("click", toggleModal);
 }
 
-//modal.addEventListener("keypress", closeModal);
+overlay.addEventListener("click", toggleModal);

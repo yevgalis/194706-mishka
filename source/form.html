@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин Мишка: Вязание на заказ</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/picturefill.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -120,7 +120,7 @@
               <h2 class="order-form__title order-form__title--email">E-mail</h2>
               <p class="order-form__group field-group">
                 <label class="visually-hidden">Электронная почта</label>
-                <input class="field-group__input" type="email" name="emailaddress" placeholder="Ваш Email*" required>
+                <input class="field-group__input" type="email" name="emailaddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Ваш Email*" required>
                 <svg class="icon icon--email" width="32" height="32">
                   <use xlink:href="img/sprite.svg#sprite-icon-mail"></use>
                 </svg>
@@ -180,8 +180,8 @@
         </p>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/svg4everybody.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </body>
 </html>

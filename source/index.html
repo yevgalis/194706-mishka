@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/picturefill.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -204,23 +204,22 @@
         </p>
       </div>
     </footer>
+    <div class="overlay modal--add-cart"></div>
     <div class="modal modal--add-cart">
-      <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <form class="modal__form choose-size" action="https://echo.htmlacademy.ru" method="post">
-          <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-s" checked>
-          <label class="choose-size__label-radio" for="size-s">s</label>
-          <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-m">
-          <label class="choose-size__label-radio" for="size-m">m</label>
-          <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-l">
-          <label class="choose-size__label-radio" for="size-l">l</label>
-          <button class="modal__button js-show-modal" type="submit">Добавить</button>
-        </form>
-      </div>
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form choose-size" action="https://echo.htmlacademy.ru" method="post">
+        <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-s" checked>
+        <label class="choose-size__label-radio" for="size-s">s</label>
+        <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-m">
+        <label class="choose-size__label-radio" for="size-m">m</label>
+        <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-l">
+        <label class="choose-size__label-radio" for="size-l">l</label>
+        <button class="modal__button js-show-modal" type="submit">Добавить</button>
+      </form>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/svg4everybody.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </body>
 </html>

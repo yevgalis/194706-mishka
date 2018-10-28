@@ -117,12 +117,13 @@
   }
 
   .production__info {
+    padding-top: 4px;
     padding-right: 41px;
     padding-left: 41px;
   }
 
   .production__description {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 
     @include font-set(15px, 30px);
   }
@@ -147,7 +148,11 @@
     padding-bottom: 59px;
 
     &:hover {
-      box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
   }
 

@@ -69,6 +69,10 @@
   .site-navigation__item {
     border: none;
 
+    &--logo {
+      min-height: 88px;
+    }
+
     &--catalog {
       order: 4;
       margin-right: 36px;
@@ -107,6 +111,11 @@
   .site-navigation__link img {
     width: 113px;
     height: 46px;
+  }
+
+  .site-navigation__item--catalog .site-navigation__link,
+  .site-navigation__item--knitting .site-navigation__link {
+    padding: 19px 0;
   }
 
   .site-navigation__item--logo .site-navigation__link {
@@ -151,6 +160,7 @@
 
     &--logo {
       order: 3;
+      padding-top: 9px;
     }
 
     &--search {
@@ -205,6 +215,16 @@
     padding: 0;
     margin-left: 75px;
     margin-right: 101px;
+  }
+
+  .site-navigation__item--catalog .site-navigation__link,
+  .site-navigation__item--knitting .site-navigation__link {
+    padding: 32px 0;
+  }
+
+  .site-navigation__item--new .site-navigation__link,
+  .site-navigation__item--sale .site-navigation__link {
+    padding: 19px 0;
   }
 
   .site-navigation__link img {
