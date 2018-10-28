@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин Мишка: Каталог товаров</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/picturefill.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -80,7 +80,7 @@
             </header>
             <footer class="catalog-item__footer">
               <span class="catalog-item__price">1 200 руб.</span>
-              <a class="catalog-item__cart" href="#" aria-label="Добавить в корзину">
+              <a class="catalog-item__cart js-show-modal" href="#" aria-label="Добавить в корзину">
                 <svg class="icon icon--cart-catalog" width="20" height="19">
                   <use xlink:href="img/sprite.svg#sprite-icon-cart"></use>
                 </svg>
@@ -190,21 +190,21 @@
         </a>
         <ul class="page-footer__social social">
           <li class="social__instagram social__link--instagram">
-            <a class="social__link" href="#" arial-label="Мы в Instagram">
+            <a class="social__link" href="#" aria-label="Мы в Instagram">
               <svg class="icon icon--instagram" width="22" height="21">
                 <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__facebook social__link--facebook">
-            <a class="social__link" href="#" arial-label="Мы в Facebook">
+            <a class="social__link" href="#" aria-label="Мы в Facebook">
               <svg class="icon icon--facebook" width="15" height="28">
                 <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__twitter social__link--twitter">
-            <a class="social__link" href="#" arial-label="Мы в Twitter">
+            <a class="social__link" href="#" aria-label="Мы в Twitter">
               <svg class="icon icon--twitter" width="23" height="20">
                 <use xlink:href="img/sprite.svg#sprite-icon-twitter"></use>
               </svg>
@@ -221,23 +221,22 @@
         </p>
       </div>
     </footer>
+    <div class="overlay modal--add-cart"></div>
     <div class="modal modal--add-cart">
-      <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <form class="modal__form choose-size" action="https://echo.htmlacademy.ru" method="post">
-          <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-s" checked>
-          <label class="choose-size__label-radio" for="size-s">s</label>
-          <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-m">
-          <label class="choose-size__label-radio" for="size-m">m</label>
-          <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-l">
-          <label class="choose-size__label-radio" for="size-l">l</label>
-          <button class="modal__button js-show-modal" type="submit">Добавить</button>
-        </form>
-      </div>
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form choose-size" action="https://echo.htmlacademy.ru" method="post">
+        <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-s" checked>
+        <label class="choose-size__label-radio" for="size-s">s</label>
+        <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-m">
+        <label class="choose-size__label-radio" for="size-m">m</label>
+        <input class="choose-size__radio visually-hidden" type="radio" name="size" id="size-l">
+        <label class="choose-size__label-radio" for="size-l">l</label>
+        <button class="modal__button js-show-modal" type="submit">Добавить</button>
+      </form>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/svg4everybody.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </body>
 </html>

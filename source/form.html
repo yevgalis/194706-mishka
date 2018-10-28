@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин Мишка: Вязание на заказ</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/picturefill.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -110,7 +110,7 @@
               <h2 class="order-form__title">Тел</h2>
               <p class="order-form__group field-group">
                 <label class="visually-hidden">Телефон</label>
-                <input class="field-group__input" type="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <input class="field-group__input" type="tel" pattern="\+7\-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 <svg class="icon icon--phone" width="25" height="24">
                   <use xlink:href="img/sprite.svg#sprite-icon-phone"></use>
                 </svg>
@@ -120,7 +120,7 @@
               <h2 class="order-form__title order-form__title--email">E-mail</h2>
               <p class="order-form__group field-group">
                 <label class="visually-hidden">Электронная почта</label>
-                <input class="field-group__input" type="email" name="emailaddress" placeholder="Ваш Email*" required>
+                <input class="field-group__input" type="email" name="emailaddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Ваш Email*" required>
                 <svg class="icon icon--email" width="32" height="32">
                   <use xlink:href="img/sprite.svg#sprite-icon-mail"></use>
                 </svg>
@@ -149,21 +149,21 @@
         </a>
         <ul class="page-footer__social social">
           <li class="social__instagram social__link--instagram">
-            <a class="social__link" href="#" arial-label="Мы в Instagram">
+            <a class="social__link" href="#" aria-label="Мы в Instagram">
               <svg class="icon icon--instagram" width="22" height="21">
                 <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__facebook social__link--facebook">
-            <a class="social__link" href="#" arial-label="Мы в Facebook">
+            <a class="social__link" href="#" aria-label="Мы в Facebook">
               <svg class="icon icon--facebook" width="15" height="28">
                 <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social__twitter social__link--twitter">
-            <a class="social__link" href="#" arial-label="Мы в Twitter">
+            <a class="social__link" href="#" aria-label="Мы в Twitter">
               <svg class="icon icon--twitter" width="23" height="20">
                 <use xlink:href="img/sprite.svg#sprite-icon-twitter"></use>
               </svg>
@@ -180,8 +180,8 @@
         </p>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/svg4everybody.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </body>
 </html>

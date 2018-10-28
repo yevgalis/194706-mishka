@@ -36,7 +36,7 @@
   .page-header__intro {
     position: relative;
     min-height: 227px;
-    margin-top: -88px;
+    margin-top: -62px;
 
     &--image {
       min-height: 746px;
@@ -68,20 +68,20 @@
     display: block;
     width: 668px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 18px;
     font-size: 15px;
     text-align: right;
   }
 
   .page-header__title {
     width: 500px;
-    margin-top: 40px;
+    margin-top: 54px;
 
     @include font-set(43px, 50px);
   }
 
   .page-header__intro--image .page-header__title {
-    margin-top: 99px;
+    margin-top: 112px;
   }
 }
 
@@ -89,6 +89,7 @@
 @media (min-width: $desktop-width) {
   .page-header__intro {
     height: 255px;
+    margin-top: -62px;
 
     &::after {
       bottom: -17px;
@@ -102,6 +103,7 @@
 
   .page-header__title {
     width: 615px;
+    margin-top: 52px;
 
     @include font-set(53px, 57px);
   }

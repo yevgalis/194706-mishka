@@ -6,7 +6,8 @@
 
 .field-group__input {
   width: 100%;
-  padding-bottom: 14px;
+  height: 38px;
+  padding-bottom: 16px;
   font-family: inherit;
   line-height: 18px;
   color: $description-color;
@@ -56,8 +57,10 @@
   }
 
   .field-group__input {
+    height: 42px;
     margin-top: -10px;
     padding-left: 15px;
+    padding-bottom: 12px;
     font-size: 19px;
   }
 
@@ -102,5 +105,15 @@
   .field-group__input[type="email"]:active + .icon--email {
     fill: #62d1ba;
     opacity: 1;
+  }
+
+  .icon--phone {
+    top: -3px;
+    right: 8px;
+  }
+
+  .icon--email {
+    top: -2px;
+    right: 5px;
   }
 }
