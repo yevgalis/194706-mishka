@@ -119,4 +119,8 @@
       opacity: 0.3;
     }
   }
+
+  .checkbox-group__input:focus + .checkbox-group__label::before {
+    border-color: #62d1ba;
+  }
 }

@@ -1,0 +1,114 @@
+.icon {
+  &--search {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 19px;
+    height: 18px;
+    fill: #d3d2d2;
+  }
+
+  &--cart {
+    position: absolute;
+    top: 32px;
+    left: 30px;
+    width: 21px;
+    height: 18px;
+    fill: #d3d2d2;
+  }
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+    fill: $social-color;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+    fill: $social-color;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+    fill: $social-color;
+  }
+
+  &--htmlacademy {
+    width: 27px;
+    height: 34px;
+    fill: $primary-color;
+  }
+
+  &--cart-catalog {
+    width: 20px;
+    height: 19px;
+    fill: #cccccc;
+  }
+
+  &--phone {
+    position: absolute;
+    top: 18px;
+    right: 8px;
+    width: 25px;
+    height: 24px;
+    fill: $black;
+    opacity: 0.2;
+  }
+
+  &--email {
+    position: absolute;
+    top: 19px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    fill: $black;
+    opacity: 0.2;
+  }
+}
+
+/// TABLET WIDTH
+@media (min-width: $tablet-width) {
+  .icon {
+    &--search {
+      position: relative;
+      top: 5px;
+    }
+
+    &--cart {
+      top: 36px;
+    }
+
+    &--footer-logo {
+      width: 102px;
+      height: 34px;
+      fill: #231f20;
+    }
+
+    &--phone {
+      top: 0;
+      right: 22px;
+    }
+
+    &--email {
+      top: 0;
+      right: 22px;
+    }
+  }
+}
+
+/// DESKTOP WIDTH
+@media (min-width: $desktop-width) {
+  .icon {
+    &--phone {
+      top: -3px;
+      right: 8px;
+    }
+
+    &--email {
+      top: -2px;
+      right: 5px;
+    }
+  }
+}
