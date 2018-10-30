@@ -6,6 +6,7 @@
 @import "base.scss";
 
 /// General blocks
+@import "blocks/icon.scss";
 @import "blocks/button.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
@@ -24,9 +25,11 @@
 @import "blocks/feedback.scss";
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
-@import "blocks/catalog.scss";
+@import "blocks/catalog-list.scss";
+@import "blocks/catalog-item.scss";
 @import "blocks/production.scss";
 @import "blocks/order.scss";
+@import "blocks/order-form.scss";
 @import "blocks/radio-group.scss";
 @import "blocks/checkbox-group.scss";
 @import "blocks/text-group.scss";

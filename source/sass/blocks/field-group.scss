@@ -30,26 +30,6 @@
   margin-bottom: 2px;
 }
 
-.icon--phone {
-  position: absolute;
-  top: 18px;
-  right: 8px;
-  width: 25px;
-  height: 24px;
-  fill: $black;
-  opacity: 0.2;
-}
-
-.icon--email {
-  position: absolute;
-  top: 19px;
-  right: 8px;
-  width: 32px;
-  height: 32px;
-  fill: $black;
-  opacity: 0.2;
-}
-
 /// TABLET WIDTH
 @media (min-width: $tablet-width) {
   .field-group {
@@ -70,16 +50,6 @@
 
   .field-group__input[type="email"] {
     margin-bottom: 50px;
-  }
-
-  .icon--phone {
-    top: 0;
-    right: 22px;
-  }
-
-  .icon--email {
-    top: 0;
-    right: 22px;
   }
 }
 
@@ -105,15 +75,5 @@
   .field-group__input[type="email"]:active + .icon--email {
     fill: #62d1ba;
     opacity: 1;
-  }
-
-  .icon--phone {
-    top: -3px;
-    right: 8px;
-  }
-
-  .icon--email {
-    top: -2px;
-    right: 5px;
   }
 }

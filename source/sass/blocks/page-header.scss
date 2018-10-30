@@ -34,7 +34,6 @@
 /// TABLET WIDTH
 @media (min-width: $tablet-width) {
   .page-header__intro {
-    position: relative;
     min-height: 227px;
     margin-top: -62px;
 
@@ -48,19 +47,6 @@
         background-image: url("../img/hero-tablet@2x.jpg");
         background-size: 1150px auto;
       }
-    }
-
-    &::after {
-      position: absolute;
-      bottom: -12px;
-      left: 0;
-      z-index: 1;
-      content: "";
-      width: 100%;
-      height: 24px;
-      background: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-size: auto 100%;
     }
   }
 
@@ -90,11 +76,6 @@
   .page-header__intro {
     height: 255px;
     margin-top: -62px;
-
-    &::after {
-      bottom: -17px;
-      height: 34px;
-    }
   }
 
   .page-header__delivery {
