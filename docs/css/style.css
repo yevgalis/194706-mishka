@@ -2219,6 +2219,12 @@ a {
   .order-form__textarea::-webkit-input-placeholder {
     color: #444444;
     opacity: 0.3; }
+  .order-form__textarea::-moz-placeholder {
+    color: #444444;
+    opacity: 0.3; }
+  .order-form__textarea:-ms-input-placeholder {
+    color: #444444;
+    opacity: 0.3; }
   .order-form__textarea::-ms-input-placeholder {
     color: #444444;
     opacity: 0.3; }
@@ -2532,6 +2538,12 @@ a {
   .text-group__input::-webkit-input-placeholder {
     color: #444444;
     opacity: 0.3; }
+  .text-group__input::-moz-placeholder {
+    color: #444444;
+    opacity: 0.3; }
+  .text-group__input:-ms-input-placeholder {
+    color: #444444;
+    opacity: 0.3; }
   .text-group__input::-ms-input-placeholder {
     color: #444444;
     opacity: 0.3; }
@@ -2596,6 +2608,12 @@ a {
   border-bottom: 2px solid #000000;
   outline: none; }
   .field-group__input::-webkit-input-placeholder {
+    color: #444444;
+    opacity: 0.3; }
+  .field-group__input::-moz-placeholder {
+    color: #444444;
+    opacity: 0.3; }
+  .field-group__input:-ms-input-placeholder {
     color: #444444;
     opacity: 0.3; }
   .field-group__input::-ms-input-placeholder {
