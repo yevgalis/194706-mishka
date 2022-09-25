@@ -14,7 +14,7 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "4.0.x",
+    "gulp-sass": "5.1.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
